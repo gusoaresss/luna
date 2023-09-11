@@ -15,6 +15,7 @@ import ParteFrontalBike from './routes/ParteFrontalBike/index.jsx'
 import ParteTraseiraBike from './routes/ParteTraseiraBike/index.jsx'
 import ValidarBike from './routes/ValidarBike/index.jsx'
 import Home from './routes/Home/index.jsx'
+import Integrantes from './routes/Integrantes/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/Validar",
         element: <ValidarBike/>,
+      },
+      {
+        path: "/Integrantes",
+        element: <Integrantes/>,
       },
     ]
   }
