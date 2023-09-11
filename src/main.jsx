@@ -14,6 +14,7 @@ import NotaFiscal from './routes/NotaFiscal/index.jsx'
 import ParteFrontalBike from './routes/ParteFrontalBike/index.jsx'
 import ParteTraseiraBike from './routes/ParteTraseiraBike/index.jsx'
 import ValidarBike from './routes/ValidarBike/index.jsx'
+import Home from './routes/Home/index.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
