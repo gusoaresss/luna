@@ -21,3 +21,57 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    errorElement: <Error/>,
+    children:[
+      {
+        path: "/",
+        element: <Home/>,
+      },
+      {
+        path: "/Documentos",
+        element: <Documentos/>,
+      },
+      {
+        path: "/FotoDaBike",
+        element: <FotoDaBike/>,
+      },
+      {
+        path: "/FotoPessoal",
+        element: <FotoPessoal/>,
+      },
+      {
+        path: "/FotoRG",
+        element: <FotoRG/>,
+      },
+      {
+        path: "/FotoRosto",
+        element: <FotoRosto/>,
+      },
+      {
+        path: "/Modificações",
+        element: <Modificacao/>,
+      },
+      {
+        path: "/NotaFiscal",
+        element: <NotaFiscal/>,
+      },
+      {
+        path: "/ParteFrontal",
+        element: <ParteFrontalBike/>,
+      },
+      {
+        path: "/ParteTraseira",
+        element: <ParteTraseiraBike/>,
+      },
+      {
+        path: "/Validar",
+        element: <ValidarBike/>,
+      },
+    ]
+  }
+])
