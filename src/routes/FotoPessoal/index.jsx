@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function FotoPessoal(){
 
     return(
@@ -8,7 +10,9 @@ export default function FotoPessoal(){
             Para isso verifique a iluminação do local e caso esteja usando, retire o óculos.<br/>
             Dica: posicione o seu rosto dentro da área circular.
             </p>
-            <button>Começar</button>
+            <Link to="/FotoRosto">
+                <button>Começar</button>
+            </Link>
         </main>
     )
 }

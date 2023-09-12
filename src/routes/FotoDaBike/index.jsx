@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function FotoDaBike(){
 
     return(
@@ -5,7 +7,9 @@ export default function FotoDaBike(){
             <h1>Foto da Bike</h1>
             <button id="startCamera">Abrir Câmera</button>
             <p>Tem certeza que a imagem está nítida?</p>
-            <button>Enviar</button>
+            <Link to="/ParteTraseira">
+                <button>Enviar</button>
+            </Link>
         </main>
     )
 }

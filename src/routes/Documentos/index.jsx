@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Documentos(){
 
     return(
@@ -8,7 +10,9 @@ export default function Documentos(){
             Para isso verifique a iluminação do local e a nitidez da foto que sera enviada.<br/>
             Dica: posicione o documento dentro da área quadriculada.
             </p>
-            <button>Começar</button>
+            <Link to="/FotoRG">
+                <button>Começar</button>
+            </Link>  
         </main>
     )
 }

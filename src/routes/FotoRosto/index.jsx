@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function FotoRosto(){
 
     return(
@@ -5,7 +7,9 @@ export default function FotoRosto(){
             <h1>Foto Rosto</h1>
             <button id="startCamera">Abrir Câmera</button>
             <p>Tem certeza que a imagem está nítida?</p>
-            <button>Enviar</button>
+            <Link to="/Validar">
+                <button>Enviar</button>
+            </Link>    
         </main>
     )
 }

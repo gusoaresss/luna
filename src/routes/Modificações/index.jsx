@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Modificacao(){
 
     return(
@@ -19,7 +21,9 @@ export default function Modificacao(){
             <label for="meuCheckbox">Banco</label><br></br>
             <input type="checkbox" id="meuCheckbox" name="meuCheckbox"></input>
             <label for="meuCheckbox">Guidão</label><br></br>
-            <button>Continuar</button>
+            <Link to="/FotoDaBike">
+                <button>Continuar</button>
+            </Link>
         </main>
     )
 }

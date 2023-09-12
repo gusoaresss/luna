@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ValidarBike(){
 
     return(
@@ -12,7 +14,9 @@ export default function ValidarBike(){
             <label for="meuCheckbox">Sim, possui modificações</label><br></br>
             <input type="checkbox" id="meuCheckbox" name="meuCheckbox"></input>
             <label for="meuCheckbox">Não possui modificação.</label><br></br>
-            <button>Continuar</button>
+            <Link to="/Modificações">
+                <button>Continuar</button>
+            </Link>
         </main>
     )
 }
