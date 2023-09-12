@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NotaFiscal(){
 
     return(
@@ -19,7 +21,9 @@ export default function NotaFiscal(){
             <input type="text" id="nome" name="nome"></input><br></br>
             <input type="checkbox" id="meuCheckbox" name="meuCheckbox"></input>
             <label for="meuCheckbox">Concordo com os Termos e Condições</label><br></br>
-            <button>Enviar</button>
+            <Link to="/Documentos">
+                <button>Enviar</button>
+            </Link>
         </main>
     )
 }

@@ -1,3 +1,4 @@
+/* Estilos padrão para o corpo do documento */
 body {
   display: flex;
   flex-direction: column;
@@ -5,12 +6,14 @@ body {
   margin: 0;
 }
 
+/* Estilos padrão para a div com o id 'root' */
 #root {
   flex: 1;
   text-align: center;
   padding: 20px;
 }
 
+/* Estilos padrão para o rodapé */
 footer {
   width: 100%;
   height: 5vh;
@@ -20,16 +23,17 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  left: 0; /
-  right: 0; 
+  left: 0;
+  right: 0;
 }
 
+/* Estilos padrão para o cabeçalho */
 .cabecalho {
   display: flex;
   align-items: center;
   background-color: darkblue;
   color: #fff;
-  height: 50px; /* Defina a altura desejada para o cabeçalho */
+  height: 50px; /* Altura do cabeçalho */
   position: fixed;
   top: 0;
   left: 0;
@@ -37,15 +41,50 @@ footer {
   padding: 0 20px;
 }
 
+/* Estilos padrão para a imagem dentro do cabeçalho */
 .imagem {
   width: 30px; /* Largura da imagem */
   height: 30px; /* Altura da imagem */
   margin-right: 10px;
 }
 
+/* Estilos padrão para o título dentro do cabeçalho */
 .titulo {
   font-size: 16px; /* Tamanho da fonte do título */
   margin: 0;
   text-align: center; /* Centralizar o texto horizontalmente */
   flex-grow: 1; /* Faz com que o título ocupe o espaço restante no cabeçalho */
+}
+
+/* Estilos padrão para o input de texto */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos padrão para o input de checkbox */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilos padrão para o label associado ao checkbox com id 'meuCheckbox' */
+label[for="meuCheckbox"] {
+  font-weight: normal;
+}
+
+/* Mídia query para telas menores */
+@media (max-width: 768px) {
+  /* Redefina o cabeçalho para se ajustar melhor em telas menores */
+  .cabecalho {
+    height: 40px; /* Reduza a altura do cabeçalho */
+  }
+
+  /* Redefina o tamanho da imagem no cabeçalho */
+  .imagem {
+    width: 20px; /* Reduza o tamanho da imagem */
+    height: 20px;
+  }
 }
