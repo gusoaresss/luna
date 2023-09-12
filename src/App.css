@@ -20,6 +20,32 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  left: 0; /* Adicione essa linha */
-  right: 0; /* Adicione essa linha */
+  left: 0; /
+  right: 0; 
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  background-color: darkblue;
+  color: #fff;
+  height: 50px; /* Defina a altura desejada para o cabeçalho */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}
+
+.imagem {
+  width: 30px; /* Largura da imagem */
+  height: 30px; /* Altura da imagem */
+  margin-right: 10px;
+}
+
+.titulo {
+  font-size: 16px; /* Tamanho da fonte do título */
+  margin: 0;
+  text-align: center; /* Centralizar o texto horizontalmente */
+  flex-grow: 1; /* Faz com que o título ocupe o espaço restante no cabeçalho */
 }
